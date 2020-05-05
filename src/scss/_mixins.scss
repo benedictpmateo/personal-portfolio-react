@@ -1,0 +1,7 @@
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue / 14) + rem;
+}
+
+@mixin line-height($sizeValue) {
+  line-height: ($sizeValue / 14) + rem;
+}
