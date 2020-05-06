@@ -5,7 +5,7 @@ const Card = styled.div`
 	position: relative;
 	width: 100%;
 
-	@media (min-width: 992px) {
+	@media (min-width: 768px) {
 		&.margin-top {
 			margin-top: 120px;
 		}
