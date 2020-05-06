@@ -1,3 +1,15 @@
 @import
 	'mixins',
-	'typography'
+	'typography';
+
+.container {
+	@media (min-width: 992px) {
+		max-width: calc(100vw - 80px);
+	}
+	@media (min-width: 1200px) {
+		max-width: calc(100vw - 160px);
+	}
+	@media (min-width: 1600px) {
+		max-width: 1140px;
+	}
+}

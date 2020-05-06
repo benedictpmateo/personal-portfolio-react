@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 const Rounded = styled.div`
   border-radius: 999px;
-  height: 140px;
+  height: 120px;
   overflow: hidden;
   position: absolute;
   text-align: center;
-  top: -60px;
-  width: 140px;
+  top: -40px;
+  width: 120px;
   img {
     height: 100%;
   }

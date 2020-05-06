@@ -1,7 +1,13 @@
 @mixin font-size($sizeValue) {
-  font-size: ($sizeValue / 14) + rem;
+  font-size: ($sizeValue / 18) + rem;
+  @media (min-width: 992px) {
+    font-size: ($sizeValue / 16) + rem;
+  }
 }
 
 @mixin line-height($sizeValue) {
-  line-height: ($sizeValue / 14) + rem;
+  line-height: ($sizeValue / 18) + rem;
+  @media (min-width: 992px) {
+    line-height: ($sizeValue / 16) + rem;
+  }
 }

@@ -12,6 +12,7 @@ const ButtonNav = styled.button`
   text-align: left;
   width: 115px;
   z-index: 1;
+  
   &:hover:not(.active) {
     background: ${props => props.theme.colors.background};
   }
@@ -19,19 +20,17 @@ const ButtonNav = styled.button`
   &.active {
     align-items: center;
     display: flex;
+    margin-left: 5px;
+    transition: margin 0.4s ease 0s;
     &:before {
       background: ${props => props.theme.colors.primary};
+      border-radius: 999px;
       content: '';
       display: block;
       height: 5px;
       width: 5px;
       margin-right: 5px;
-      border-radius: 999px;
-
       transition: all 0.4s ease 0s;
-    }
-    &:hover {
-      // background: none;
     }
   }
 `

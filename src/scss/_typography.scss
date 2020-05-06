@@ -48,14 +48,14 @@ h3 {
   @include line-height(30);
 }
 
+h5 {
+  @include font-size(16);
+  @include line-height(20);
+}
+
 p {
   @include font-size(14);
   @include line-height(24);
-}
-
-span {
-  @include font-size(16);
-  @include font-size(20);
 }
 
 button:focus {
