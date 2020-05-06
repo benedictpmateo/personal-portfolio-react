@@ -4,8 +4,11 @@ import styled from 'styled-components';
 const Card = styled.div`
 	position: relative;
 	width: 100%;
-	&.margin-top {
-		margin-top: 120px;
+
+	@media (min-width: 992px) {
+		&.margin-top {
+			margin-top: 120px;
+		}
 	}
 `;
 
