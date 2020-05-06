@@ -1,17 +1,13 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype'),
-    url('../fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
-    url('../fonts/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2');
+  src: url('../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype');
   font-style: 'normal';
   font-weight: 'normal';
 }
 
 @font-face {
   font-family: 'Gilroy Bold';
-  src: url('../fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype'),
-    url('../fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
-    url('../fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2');
+  src: url('../fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
   font-style: 'normal';
   font-weight: 'bold';
 }
