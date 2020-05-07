@@ -16,24 +16,29 @@ const CardBody = styled.div`
 	width: 100%;
 	h3 {
 		color: ${props => props.theme.colors.primary};
+		margin: 0;
 	}
 	h3, p {
 		letter-spacing: 0.05em;
 		padding: 0 40px;
-		margin: 0;
+	}
+	p {
+		margin-top: 0;
+		padding-bottom: 40px;
 	}
 	.image {
 		align-items: center;
 		background: ${props => props.background};
 		border-radius: 8px 0px 8px 0px;
 		display: flex;
-		min-height: 164px;
+		height: 164px;
 		justify-content: center;
 		margin-left: 40px;
-		margin-top: 24px;
 		width: calc(100% - 40px);
 		padding: 40px;
 		img {
+			height: 100%;
+			object-fit: contain;
 			width: 100%;
 		}
 	}
@@ -52,7 +57,7 @@ const ProjectCard = ({ title, subtitle, image, background }) => (
 		<CardBody background={background}>
 			<h3>{title}</h3>
 			<p>{subtitle}</p>
-			<div className="image">
+			<div className="image d-none d-md-block">
 				<img src={image} alt=""/>
 			</div>
 		</CardBody>

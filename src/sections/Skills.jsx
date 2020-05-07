@@ -16,10 +16,10 @@ import {ReactComponent as _sass} from '../assets/svg/_sass.svg';
 import {ReactComponent as _vue} from '../assets/svg/_vue.svg';
 
 const SkillList = styled.div`
-	width: 100%;
-	margin-top: 40px;
 	margin-bottom: 40px;
+	margin-top: 40px;
 	padding: 0 5px 0;
+	width: 100%;
 	@media (min-width: 768px) {
 		padding: 0;
 	}

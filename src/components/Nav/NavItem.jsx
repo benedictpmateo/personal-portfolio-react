@@ -10,7 +10,6 @@ const ButtonNav = styled.button`
   padding: 8px 12px;
   margin: 6px 0;
   text-align: left;
-  width: 115px;
   z-index: 1;
   
   &:hover:not(.active) {

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import InterestCard from '../components/Card/InterestCard';
 
 const InterestList = styled.div`
-	width: 100%;
-	margin-top: 40px;
 	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 100%;
 `;
 
 const items = [

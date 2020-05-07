@@ -12,29 +12,29 @@ const List = styled.div`
 `;
 
 const items = [
-  'Projects',
-  'Experience',
-  'Skills',
+  'Projects I\'ve worked on',
+  'Work Experience',
+  'Skills + Tools',
   'Interest'
 ];
 
 const Nav = ({ refItems }) => {
-  const [active, setActive] = useState('Projects');
+  const [active, setActive] = useState('Projects I\'ve worked on');
 
   useEffect(_ => {
     const handleScroll = _ => {
       const y = window.pageYOffset;
-      const expY = refItems['Experience'].current.offsetTop - 30;
-      const skiY = refItems['Skills'].current.offsetTop - 30;
-      const intY = (refItems['Skills'].current.offsetTop - 30) + (refItems['Interest'].current.clientHeight);
+      const expY = refItems['Work Experience'].current.offsetTop - 30;
+      const skiY = refItems['Skills + Tools'].current.offsetTop - 30;
+      const intY = (refItems['Skills + Tools'].current.offsetTop - 30) + (refItems['Interest'].current.clientHeight);
       console.log(y, intY)
       let setter = null;
       if (y < expY) {
-        setter = 'Projects';
+        setter = 'Projects I\'ve worked on';
       } else if (y < skiY) {
-        setter = 'Experience';
+        setter = 'Work Experience';
       } else if (y < intY) {
-        setter = 'Skills';
+        setter = 'Skills + Tools';
       } else {
         setter = 'Interest';
       }
@@ -51,13 +51,13 @@ const Nav = ({ refItems }) => {
       let y = 0;
   
       switch (item) {
-        case 'Projects':
+        case 'Projects I\'ve worked on':
           y = refItems[item].current.offsetTop - 40;
           break;
-        case 'Experience':
+        case 'Work Experience':
           y = refItems[item].current.offsetTop - 30;
           break;
-        case 'Skills':
+        case 'Skills + Tools':
           y = refItems[item].current.offsetTop - 30;
           break;
         case 'Interest':

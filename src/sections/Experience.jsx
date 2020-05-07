@@ -3,22 +3,22 @@ import styled from 'styled-components';
 import ExperienceCard from '../components/Card/ExperienceCard';
 
 const ExperienceList = styled.div`
-	width: 100%;
-	margin-top: 80px;
 	margin-bottom: 40px;
+	margin-top: 80px;
+	width: 100%;
 `;
 
 const items = [
+	// {
+	// 	date: 'FEBRUARY 2020 - PRESENT',
+	// 	title: 'Front-End Developer',
+	// 	company: 'Paykickstart LLC',
+	// 	lists: [
+	// 		'Convert web design to code and create functionality for components using Laravel, Vue.JS + Vuex, and Sass',
+	// 	]
+	// },
 	{
-		date: 'FEBRUARY 2020 - PRESENT',
-		title: 'Front-End Developer',
-		company: 'Paykickstart LLC',
-		lists: [
-			'Convert web design to code and create functionality for components using Laravel, Vue.JS + Vuex, and Sass',
-		]
-	},
-	{
-		date: 'APRIL 2019 - JUNE 2020',
+		date: 'APRIL 2019 - PRESENT',
 		title: 'Software Engineer',
 		company: 'Oqulo, August 99 Inc.',
 		address: 'Ortigas, Pasig City, Philippines',

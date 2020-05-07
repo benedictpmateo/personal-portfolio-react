@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Card = styled.div`
 	position: relative;
 	width: 100%;
-
 	&.col-6 {
 		padding-left: 10px;
 		padding-right: 10px;
