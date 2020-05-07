@@ -30,6 +30,10 @@ const Link = styled.a`
   img {
     margin-right: 12px;
   }
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 const SocialLinks = () => {

@@ -26,8 +26,8 @@ const Nav = ({ refItems }) => {
       const y = window.pageYOffset;
       const expY = refItems['Experience'].current.offsetTop - 30;
       const skiY = refItems['Skills'].current.offsetTop - 30;
-      const intY = (refItems['Interest'].current.offsetTop - 30) - (refItems['Interest'].current.clientHeight + 40);
-
+      const intY = (refItems['Skills'].current.offsetTop - 30) + (refItems['Interest'].current.clientHeight);
+      console.log(y, intY)
       let setter = null;
       if (y < expY) {
         setter = 'Projects';

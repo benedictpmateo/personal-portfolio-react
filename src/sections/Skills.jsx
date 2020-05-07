@@ -1,18 +1,19 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import styled from 'styled-components';
 import Masonry from 'react-masonry-component';
 import SkillCard from '../components/Card/SkillCard';
 
-import angular from '../assets/svg/_angular.svg';
-import css from '../assets/svg/_css.svg';
-import html from '../assets/svg/_html.svg';
-import js from '../assets/svg/_js.svg';
-import mongo from '../assets/svg/_mongo.svg';
-import node from '../assets/svg/_node.svg';
-import postgres from '../assets/svg/_postgres.svg';
-import react from '../assets/svg/_react.svg';
-import sass from '../assets/svg/_sass.svg';
-import vue from '../assets/svg/_vue.svg';
+import {ReactComponent as _angular} from '../assets/svg/_angular.svg';
+import {ReactComponent as _css} from '../assets/svg/_css.svg';
+import {ReactComponent as _html} from '../assets/svg/_html.svg';
+import {ReactComponent as _js} from '../assets/svg/_js.svg';
+import {ReactComponent as _mongo} from '../assets/svg/_mongo.svg';
+import {ReactComponent as _node} from '../assets/svg/_node.svg';
+import {ReactComponent as _postgres} from '../assets/svg/_postgres.svg';
+import {ReactComponent as _react} from '../assets/svg/_react.svg';
+import {ReactComponent as _sass} from '../assets/svg/_sass.svg';
+import {ReactComponent as _vue} from '../assets/svg/_vue.svg';
 
 const SkillList = styled.div`
 	width: 100%;
@@ -22,44 +23,54 @@ const SkillList = styled.div`
 
 const items = [
 	{
-		image: html,
-		title: 'HTML'
+		image: () => <_html />,
+		title: 'HTML',
+		color: '#e34e24'
 	},
 	{
-		image: js,
-		title: 'Javascript'
+		image: () => <_js />,
+		title: 'Javascript',
+		color: '#f7db04'
 	},
 	{
-		image: angular,
-		title: 'AngularJS'
+		image: () => <_angular />,
+		title: 'AngularJS',
+		color: '#e15854'
 	},
 	{
-		image: css,
-		title: 'CSS'
+		image: () => <_css />,
+		title: 'CSS',
+		color: '#1172b8'
 	},
 	{
-		image: node,
-		title: 'Node.js'
+		image: () => <_node />,
+		title: 'Node.js',
+		color: '#8ec84f'
 	},
 	{
-		image: mongo,
-		title: 'MongoDB'
+		image: () => <_mongo />,
+		title: 'MongoDB',
+		color: '#67ad3f'
 	},
 	{
-		image: sass,
-		title: 'SASS'
+		image: () => <_sass />,
+		title: 'SASS',
+		color: '#9b57a2'
 	},
 	{
-		image: vue,
-		title: 'Vue.js'
+		image: () => <_vue />,
+		title: 'Vue.js',
+		color: '#3eb37e'
 	},
 	{
-		image: postgres,
-		title: 'PostgreSQL'
+		image: () => <_postgres />,
+		title: 'PostgreSQL',
+		color: '#2f5d8d'
 	},
 	{
-		image: react,
-		title: 'React + Redux'
+		image: () => <_react />,
+		title: 'React + Redux',
+		color: '#00d1f7'
 	},
 ];
 

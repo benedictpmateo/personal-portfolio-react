@@ -32,16 +32,21 @@ const CardBody = styled.div`
 			transform: scale(1.1);
 		}
 		z-index: 1;
+		svg {
+			g, path {
+				fill: ${props => props.setFill};
+			}
+		}
 	}
 `;
 
-const SkillCard = ({ title, image, index }) => (
+const SkillCard = ({ title, image, color, index }) => (
 	<Card className={
 		"col-12 col-md-4 col-lg-4 "
 		+ (index === 0 || index === 2 ? 'margin-top' : '' )
 	}>
-		<CardBody>
-			<img src={image} alt=""/>
+		<CardBody setFill={color}>
+			{image()}
 			<p>{title}</p>
 		</CardBody>
 	</Card>
