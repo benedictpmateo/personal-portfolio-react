@@ -8,8 +8,11 @@ const Card = styled.div`
   background: ${props => props.theme.colors.card};
   border-radius: 8px;
   margin-top: 40px;
-  padding: 120px 40px 40px;
+  padding: 120px 40px 80px;
   position: relative;
+  @media (min-width: 768px) {
+    padding: 120px 40px 40px;
+  }
 `;
 
 const Name = styled.h1`
@@ -26,6 +29,7 @@ const Mailer = styled.a`
   border: 0;
   border-radius: 4px;
   background: ${props => props.theme.colors.secondary};
+  bottom: 40px;
   color: white;
   cursor: pointer;
   display: flex;
@@ -34,7 +38,6 @@ const Mailer = styled.a`
   padding: 8px 12px;
   position: absolute;
   text-decoration: none;
-  top: 20px;
   right: 40px;
   img {
     margin-left: 10px;
@@ -43,6 +46,10 @@ const Mailer = styled.a`
     color: white;
     background: ${props => props.theme.colors.hover};
     text-decoration: none;
+  }
+  @media (min-width: 768px) {
+    top: 20px;
+    bottom: unset;
   }
 `;
 

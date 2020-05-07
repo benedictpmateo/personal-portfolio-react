@@ -4,7 +4,7 @@ import InterestCard from '../components/Card/InterestCard';
 
 const InterestList = styled.div`
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 `;
 

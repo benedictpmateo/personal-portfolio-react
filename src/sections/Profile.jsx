@@ -25,6 +25,21 @@ const Container = styled.div`
   }
 `;
 
+const Disclaimer = styled.div`
+  background: ${props => props.theme.colors.card};
+  border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 24px;
+  text-align: center;
+  h5 {
+    letter-spacing: 0.05em;
+  }
+  p {
+    font-size: 10px;
+    margin: 0;
+  }
+`;
+
 const Profile = () => {
   const projectRef = useRef();
   const experienceRef = useRef();
@@ -49,7 +64,16 @@ const Profile = () => {
             <Experience setRef={experienceRef} />
             <Skills setRef={skillRef} />
             <Interest setRef={interestRef} />
+            <Disclaimer>
+              <p>
+                CONTENT DISCLAIMER: Developer represents and warrants that developer has the knowledge,
+                skill and experience necessary to produce the works. Projects are intellectual property of each client or employer.
+                This site was created to showcase the skills, trade, profession and expertise of the developer.
+              </p>
+            </Disclaimer>
           </div>
+        </div>
+        <div className="col-12">
         </div>
       </div>
     </Container>

@@ -5,7 +5,7 @@ import ProjectCard from '../components/Card/ProjectCard';
 
 import Duuzra from '../assets/img/duuzra.png';
 import Filmis from '../assets/img/filmis.png';
-import Paykickstart from '../assets/img/paykickstart.png';
+import Paykickstart from '../assets/img/paykickstart.png';	
 
 import CoworkerHQ from '../assets/svg/coworkerhq.svg';
 import Loft from '../assets/svg/loft.svg';
