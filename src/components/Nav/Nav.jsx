@@ -19,7 +19,7 @@ const items = [
 ];
 
 const Nav = ({ refItems }) => {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState('Projects');
 
   useEffect(_ => {
     const handleScroll = _ => {
