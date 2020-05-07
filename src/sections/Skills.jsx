@@ -19,6 +19,10 @@ const SkillList = styled.div`
 	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	padding: 0 5px 0;
+	@media (min-width: 768px) {
+		padding: 0;
+	}
 `;
 
 const items = [
