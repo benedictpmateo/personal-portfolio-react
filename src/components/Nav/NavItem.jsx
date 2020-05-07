@@ -19,6 +19,7 @@ const ButtonNav = styled.button`
 
   &.active {
     align-items: center;
+    background: ${props => props.theme.colors.secondary};
     display: flex;
     margin-left: 5px;
     transition: margin 0.4s ease 0s;

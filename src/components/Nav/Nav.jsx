@@ -11,19 +11,6 @@ const List = styled.div`
   }
 `;
 
-const ActiveIndicator = styled.div`
-  background: ${props => props.theme.colors.secondary};
-  border-radius: 4px;
-  height: 40px;
-  left: 0;
-  margin: 6px 0;
-  position: absolute;
-  top: ${props => props.position}px;
-  width: 115px;
-  z-index: 0;
-  transition: all 0.4s ease 0s;
-`;
-
 const items = [
   'Projects',
   'Experience',
@@ -31,33 +18,27 @@ const items = [
   'Interest'
 ];
 
-const offset = {
-  'Projects': 0,
-  'Experience': 52,
-  'Skills': 104,
-  'Interest': 156
-};
-
 const Nav = ({ refItems }) => {
-  const [active, setActive] = useState('Projects');
-  const [position, setPosition] = useState(0);
+  const [active, setActive] = useState(null);
 
   useEffect(_ => {
-    const handleScroll = _ => { 
+    const handleScroll = _ => {
+      const y = window.pageYOffset;
       const expY = refItems['Experience'].current.offsetTop - 30;
       const skiY = refItems['Skills'].current.offsetTop - 30;
+      const intY = (refItems['Interest'].current.offsetTop - 30) - (refItems['Interest'].current.clientHeight + 40);
+
       let setter = null;
-      // if (window.pageYOffset < expY) {
-      //   setter = 'Projects';
-      // } else if (window.pageYOffset < skiY) {
-      //   setter = 'Experience';
-      // } else if (window.pageYOffset >= skiY) {
-      //   setter = 'Skills';
-      // }
-      if (setter !== active) {
-        // setActive(setter);
-        // setPosition(offset[setter]);
+      if (y < expY) {
+        setter = 'Projects';
+      } else if (y < skiY) {
+        setter = 'Experience';
+      } else if (y < intY) {
+        setter = 'Skills';
+      } else {
+        setter = 'Interest';
       }
+      setActive(setter);
     }
     window.addEventListener('scroll', handleScroll)
     return _ => {
@@ -84,8 +65,7 @@ const Nav = ({ refItems }) => {
           break;
         default:
       }
-      setPosition(offset[item]);
-      setActive(item);
+
       if (scroll) {
         scroll({ y, smooth: true })
       }
@@ -111,9 +91,6 @@ const Nav = ({ refItems }) => {
             </ScrollTo>
         )
       }
-      <ActiveIndicator 
-        position={position}
-      />
     </List>
   ); 
 };
