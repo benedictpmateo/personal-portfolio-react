@@ -39,9 +39,9 @@ const items = [
 		background: '#DC503F',
 	},
 	{
-		image: Paykickstart,
-		title: 'Paykickstart',
-		subtitle: 'Laravel • VueJS',
+		image: QTime,
+		title: 'QTime Software',
+		subtitle: 'Laravel • VueJS • PostgreSQL',
 		background: 'white'
 	},
 	{
@@ -51,9 +51,9 @@ const items = [
 		background: '#4A97D2',
 	},
 	{
-		image: QTime,
-		title: 'QTime Software',
-		subtitle: 'Laravel • VueJS • PostgreSQL',
+		image: Paykickstart,
+		title: 'Paykickstart',
+		subtitle: 'Laravel • VueJS',
 		background: 'white'
 	},
 	{
