@@ -9,16 +9,16 @@ const ExperienceList = styled.div`
 `;
 
 const items = [
-	// {
-	// 	date: 'FEBRUARY 2020 - PRESENT',
-	// 	title: 'Front-End Developer',
-	// 	company: 'Paykickstart LLC',
-	// 	lists: [
-	// 		'Convert web design to code and create functionality for components using Laravel, Vue.JS + Vuex, and Sass',
-	// 	]
-	// },
 	{
-		date: 'APRIL 2019 - PRESENT',
+		date: 'FEBRUARY 2020 - PRESENT',
+		title: 'Front-End Developer',
+		company: 'Paykickstart LLC',
+		lists: [
+			'Creating and implementing functionality to custom components.',
+		]
+	},
+	{
+		date: 'APRIL 2019 - JUNE 2020',
 		title: 'Software Engineer',
 		company: 'Oqulo, August 99 Inc.',
 		address: 'Ortigas, Pasig City, Philippines',
