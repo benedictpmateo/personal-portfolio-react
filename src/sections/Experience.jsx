@@ -10,8 +10,16 @@ const ExperienceList = styled.div`
 
 const items = [
 	{
+		date: 'JUNE 2020 - PRESENT',
+		title: 'Front End Developer',
+		company: 'Changing Digital',
+		lists: [
+			'Working mostly on the client-side projects and producing HTML, CSS and JavaScript.'
+		]
+	},
+	{
 		date: 'FEBRUARY 2020 - PRESENT',
-		title: 'Front-End Developer',
+		title: 'Front End Developer',
 		company: 'Paykickstart LLC',
 		lists: [
 			'Creating and implementing functionality to custom components.',
