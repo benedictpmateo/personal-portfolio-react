@@ -44,7 +44,7 @@ const Nav = ({ refItems }) => {
     return _ => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [refItems])
 
   const handleActive = (item, scroll) => {
     if (item !== active) {
