@@ -18,7 +18,7 @@ const items = [
 		]
 	},
 	{
-		date: 'FEBRUARY 2020 - PRESENT',
+		date: 'FEBRUARY 2020 - OCTOBER 2020',
 		title: 'Front End Developer',
 		company: 'Paykickstart LLC',
 		lists: [
