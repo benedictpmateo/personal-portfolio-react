@@ -12,10 +12,10 @@ const List = styled.div`
 `;
 
 const items = [
-  'Projects I\'ve worked on',
+  // 'Projects I\'ve worked on',
   'Work Experience',
   'Skills + Tools',
-  'Interest'
+  // 'Interest'
 ];
 
 const Nav = ({ refItems }) => {
@@ -24,19 +24,15 @@ const Nav = ({ refItems }) => {
   useEffect(_ => {
     const handleScroll = _ => {
       const y = window.pageYOffset;
-      const expY = refItems['Work Experience'].current.offsetTop - 30;
+      // const expY = refItems['Work Experience'].current.offsetTop - 30;
       const skiY = refItems['Skills + Tools'].current.offsetTop - 30;
-      const intY = (refItems['Skills + Tools'].current.offsetTop - 30) + (refItems['Interest'].current.clientHeight);
-      console.log(y, intY)
+      // const intY = (refItems['Skills + Tools'].current.offsetTop - 30);
+
       let setter = null;
-      if (y < expY) {
-        setter = 'Projects I\'ve worked on';
-      } else if (y < skiY) {
+      if (y < skiY) {
         setter = 'Work Experience';
-      } else if (y < intY) {
-        setter = 'Skills + Tools';
       } else {
-        setter = 'Interest';
+        setter = 'Skills + Tools';
       }
       setActive(setter);
     }
@@ -51,18 +47,15 @@ const Nav = ({ refItems }) => {
       let y = 0;
   
       switch (item) {
-        case 'Projects I\'ve worked on':
-          y = refItems[item].current.offsetTop - 40;
-          break;
         case 'Work Experience':
-          y = refItems[item].current.offsetTop - 30;
+          y = refItems[item].current.offsetTop - 40;
           break;
         case 'Skills + Tools':
           y = refItems[item].current.offsetTop - 30;
           break;
-        case 'Interest':
-          y = refItems[item].current.offsetTop - 30;
-          break;
+        // case 'Interest':
+        //   y = refItems[item].current.offsetTop - 30;
+        //   break;
         default:
       }
 

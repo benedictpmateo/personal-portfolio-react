@@ -4,60 +4,82 @@ import ExperienceCard from '../components/Card/ExperienceCard';
 
 const ExperienceList = styled.div`
 	margin-bottom: 40px;
-	margin-top: 80px;
+	margin-top: 40px;
 	width: 100%;
 `;
 
 const items = [
 	{
-		date: 'JUNE 2020 - PRESENT',
-		title: 'Front End Developer',
-		company: 'Changing Digital',
+		date: 'OCT 2021 - PRESENT',
+		title: 'NFT & Front End Developer',
+		company: '',
 		lists: [
-			'Working mostly on the client-side projects and producing HTML, CSS and JavaScript.'
+			'Develop smart contracts using SOL',
+			'Develop scripts to generate NFTs',
+			'Develop mint pages and NFT features/applications using web3, ether.js, reactjs and vue',
 		]
+	},
+	{
+		date: 'JUNE 2020 - MAY 2022',
+		title: 'Full Stack Developer',
+		company: '(Remote) Changing Digital Ltd.',
+		address: 'London Rd. Great Chesterford',
+		lists: [
+			'Develop web and mobile applications using ReactJS, React Native, NextJS, VueJS and Wordpress.'
+		]
+	},
+	{
+		date: 'FEB 2021 - Aug 2021',
+		title: 'Full Stack Developer',
+		company: '(Remote) CarClarity',
+		address: 'Surry Hills, Australia',
+		lists: [
+			'Develop web application and microsite using Vue and NodeJS for API'
+		],
 	},
 	{
 		date: 'FEBRUARY 2020 - OCTOBER 2020',
 		title: 'Front End Developer',
-		company: 'Paykickstart LLC',
+		company: '(Remote) Paykickstart LLC',
+		address: 'Carmel, Indiana, United States',
 		lists: [
-			'Creating and implementing functionality to custom components.',
+			'Develop Web application using LaraVue (Laravel and VueJS)',
 		]
+	},
+	{
+		date: 'JUNE 2019 - NOV 2020',
+		title: 'Full Stack Developer',
+		company: '(Upwork) Filmis',
+		lists: [
+			'Develop a web application using LaraAngular (Laravel and Angular)'
+		],
 	},
 	{
 		date: 'APRIL 2019 - JUNE 2020',
 		title: 'Software Engineer',
-		company: 'Oqulo, August 99 Inc.',
+		company: '(Onsite) Oqulo, August 99 Inc.',
 		address: 'Ortigas, Pasig City, Philippines',
 		lists: [
-			'Developed and architectured MVP applications built with different web frameworks and libraries such as React + Redux (Saga), React Native, Vue.JS, Next, Nest, Nuxt, Laravel, MongoDB, PostgreSQL',
-			'Constructed a working directory for coworking spaces in the philippines. https://cowork.ph',
-			'Implemented the reservation allocation algorithm from loft.ph to the new application https://qspaceapp.com',
-			'Developed a free time tracking software https://qtimesoftware.com'
+			'Develop Web and Mobile applications using React, Vue, NuxtJS, NextJS, and React Native',
+			'Built API and Backend Apps using NodeJS (Express), TypeORM, NestJS, Laravel, PostgreSQL and MongoDB',
 		]
 	},
 	{
 		date: 'JUNE 2018 - APRIL 2019',
 		title: 'Web Application Developer',
-		company: 'The Design People, August 99 Inc.',
+		company: '(Onsite) The Design People, August 99 Inc.',
 		address: 'Ortigas, Pasig City, Philippines',
 		lists: [
-			'Developed a web application for booking and reservation of coworking spaces. https://loft.ph',
-			'Developed a web application for listings of commercial properties in the PH https://real.ph',
-			'Implemented reservation allocation algorithms for single order with multiple bookings with different dates.',
-			'Technology used - MongoDB, Express, Pug, Vue.JS, Node | Laravel, PostgreSQL'
+			'Develop Web Applications using Wordpress, Laravel and VueJS and also created API and backend applications using PHP, NodeJS and MongoDB'
 		]
 	},
 	{
 		date: 'APRIL 2017 - MAY 2018',
 		title: 'Full Stack Developer',
-		company: 'Mergepoint System Solutions',
+		company: '(Onsite) Mergepoint System Solutions',
 		address: 'Naga City, Bicol Region, Philippines',
 		lists: [
-			'Developed a mobile application content sharing for live & virtual events, meetings, training and marketing distribution.',
-			'Practiced agile and scrum project management while building the application.',
-			'Technology used - CouchDB, Express, Angular + Ionic, Node'
+			'Develop Web and Mobile App using Ionic2 and API using Node, Express and CouchDB'
 		]
 	}
 ]

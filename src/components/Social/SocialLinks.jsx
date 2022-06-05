@@ -7,7 +7,7 @@ import Stackoverflow from '../../assets/svg/stackoverflow.svg';
 const LinkList = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 40px 40px 0;
+  padding: 40px 0 0;
   width: 100%;
   @media (max-width: 500px) {
     flex-wrap: wrap;
@@ -39,18 +39,18 @@ const Link = styled.a`
 const SocialLinks = () => {
   return (
     <LinkList>
-      <Link href="https://www.linkedin.com/in/mateomattmatt/" target="_blank">
+      {/* <Link href="https://www.linkedin.com/in/mateomattmatt/" target="_blank">
         <img src={LinkedIn} alt="" />
         LinkedIn
-      </Link>
+      </Link> */}
       <Link href="https://github.com/benedictpmateo" target="_blank">
         <img src={GitHub} alt="" />
         GitHub
       </Link>
-      <Link href="https://stackoverflow.com/users/11454452/benedict-mateo" target="_blank">
+      {/* <Link href="https://stackoverflow.com/users/11454452/benedict-mateo" target="_blank">
         <img src={Stackoverflow} alt="" />
         Stackoverflow
-      </Link>
+      </Link> */}
     </LinkList>
   )  
 };

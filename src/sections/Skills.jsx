@@ -14,6 +14,8 @@ import {ReactComponent as _postgres} from '../assets/svg/_postgres.svg';
 import {ReactComponent as _react} from '../assets/svg/_react.svg';
 import {ReactComponent as _sass} from '../assets/svg/_sass.svg';
 import {ReactComponent as _vue} from '../assets/svg/_vue.svg';
+import {ReactComponent as _web3} from '../assets/svg/_web3.svg';
+import {ReactComponent as _sol} from '../assets/svg/_sol.svg';
 
 const SkillList = styled.div`
 	margin-bottom: 40px;
@@ -36,11 +38,11 @@ const items = [
 		title: 'Javascript',
 		color: '#f7db04'
 	},
-	{
-		image: () => <_angular />,
-		title: 'AngularJS',
-		color: '#e15854'
-	},
+	// {
+	// 	image: () => <_angular />,
+	// 	title: 'AngularJS',
+	// 	color: '#e15854'
+	// },
 	{
 		image: () => <_css />,
 		title: 'CSS',
@@ -66,15 +68,25 @@ const items = [
 		title: 'Vue.js',
 		color: '#3eb37e'
 	},
-	{
-		image: () => <_postgres />,
-		title: 'PostgreSQL',
-		color: '#2f5d8d'
-	},
+	// {
+	// 	image: () => <_postgres />,
+	// 	title: 'PostgreSQL',
+	// 	color: '#2f5d8d'
+	// },
 	{
 		image: () => <_react />,
-		title: 'React + Redux',
+		title: 'React',
 		color: '#00d1f7'
+	},
+	{
+		image: () => <_web3 />,
+		title: 'Web3',
+		color: '#ff5722'
+	},
+	{
+		image: () => <_sol />,
+		title: 'Solidity',
+		color: '#474949'
 	},
 ];
 

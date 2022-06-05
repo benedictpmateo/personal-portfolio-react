@@ -57,9 +57,6 @@ const ProjectCard = ({ title, subtitle, image, background }) => (
 		<CardBody background={background}>
 			<h3>{title}</h3>
 			<p>{subtitle}</p>
-			<div className="image d-none d-md-block">
-				<img src={image} alt=""/>
-			</div>
 		</CardBody>
 	</Card>
 );

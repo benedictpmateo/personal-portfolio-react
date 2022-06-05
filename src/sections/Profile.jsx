@@ -90,18 +90,16 @@ const Profile = () => {
         <div className="row pt-5">
           <div className="col-12 col-lg-6 sticky">
             <ProfileCard refItems={{
-              'Projects I\'ve worked on': projectRef,
               'Work Experience': experienceRef,
               'Skills + Tools': skillRef,
-              'Interest': interestRef
             }} />
             <SocialLinks />
           </div>
           <div className="col-12 col-lg-6">
-            <Projects setRef={projectRef} />
+            {/* <Projects setRef={projectRef} /> */}
             <Experience setRef={experienceRef} />
             <Skills setRef={skillRef} />
-            <Interest setRef={interestRef} />
+            {/* <Interest setRef={interestRef} /> */}
           </div>
         </div>
         <div className="col-12">
