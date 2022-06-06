@@ -2,10 +2,8 @@ import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import ProfileCard from '../components/Card/ProfileCard';
 import SocialLinks from '../components/Social/SocialLinks';
-import Projects from './Projects';
 import Experience from './Experience';
 import Skills from './Skills';
-import Interest from './Interest';
 
 const Container = styled.div`
   @media(min-width: 992px) {
@@ -68,10 +66,8 @@ const Disclaimer = styled.div`
 
 const Profile = () => {
   const [disclaimer, setDisclaimer] = useState(false);
-  const projectRef = useRef();
   const experienceRef = useRef();
   const skillRef = useRef();
-  const interestRef = useRef();
 
   return (
     <Container>

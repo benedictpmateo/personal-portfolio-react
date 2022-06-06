@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LinkedIn from '../../assets/svg/linkedin.svg';
 import GitHub from '../../assets/svg/github.svg';
-import Stackoverflow from '../../assets/svg/stackoverflow.svg';
 
 const LinkList = styled.div`
   display: flex;

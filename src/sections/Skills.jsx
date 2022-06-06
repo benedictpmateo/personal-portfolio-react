@@ -4,13 +4,11 @@ import styled from 'styled-components';
 import Masonry from 'react-masonry-component';
 import SkillCard from '../components/Card/SkillCard';
 
-import {ReactComponent as _angular} from '../assets/svg/_angular.svg';
 import {ReactComponent as _css} from '../assets/svg/_css.svg';
 import {ReactComponent as _html} from '../assets/svg/_html.svg';
 import {ReactComponent as _js} from '../assets/svg/_js.svg';
 import {ReactComponent as _mongo} from '../assets/svg/_mongo.svg';
 import {ReactComponent as _node} from '../assets/svg/_node.svg';
-import {ReactComponent as _postgres} from '../assets/svg/_postgres.svg';
 import {ReactComponent as _react} from '../assets/svg/_react.svg';
 import {ReactComponent as _sass} from '../assets/svg/_sass.svg';
 import {ReactComponent as _vue} from '../assets/svg/_vue.svg';
