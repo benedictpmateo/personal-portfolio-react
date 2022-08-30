@@ -11,8 +11,8 @@ const ExperienceList = styled.div`
 const items = [
 	{
 		date: 'OCT 2021 - PRESENT',
-		title: 'NFT & Front End Developer',
-		company: '',
+		title: 'Project Lead Developer',
+		company: 'dApp NFT Developer',
 		lists: [
 			'Develop smart contracts using SOL',
 			'Develop scripts to generate NFTs',
