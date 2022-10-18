@@ -14,7 +14,7 @@ const items = [
 		title: 'Project Lead Developer',
 		company: 'dApp NFT Developer',
 		lists: [
-			'Develop smart contracts using SOL',
+			'Develop smart contracts using solidity',
 			'Develop scripts to generate NFTs',
 			'Develop mint pages and NFT features/applications using web3, ether.js, reactjs and vue',
 		]
