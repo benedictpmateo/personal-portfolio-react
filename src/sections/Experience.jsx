@@ -11,9 +11,10 @@ const ExperienceList = styled.div`
 const items = [
 	{
 		date: 'OCT 2021 - PRESENT',
-		title: 'Project Lead Developer',
-		company: 'dApp NFT Developer',
+		title: 'Senior Full Stack Developer',
+		company: 'Royal Labs LLC',
 		lists: [
+			'Develop SaaS application used for clients in NFT',
 			'Develop smart contracts using solidity',
 			'Develop scripts to generate NFTs',
 			'Develop mint pages and NFT features/applications using web3, ether.js, reactjs and vue',
