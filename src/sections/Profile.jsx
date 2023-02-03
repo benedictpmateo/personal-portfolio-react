@@ -4,7 +4,6 @@ import ProfileCard from '../components/Card/ProfileCard';
 import SocialLinks from '../components/Social/SocialLinks';
 import Experience from './Experience';
 import Skills from './Skills';
-import Projects from './Projects';
 
 const Container = styled.div`
   @media(min-width: 992px) {
@@ -69,7 +68,6 @@ const Profile = () => {
   const [disclaimer, setDisclaimer] = useState(false);
   const experienceRef = useRef();
   const skillRef = useRef();
-  const projectRef = useRef();
 
   return (
     <Container>
